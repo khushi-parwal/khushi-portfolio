@@ -1,0 +1,131 @@
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.work-title{
+    position: relative
+    
+}
+.work-title h1{
+        padding: 0px 30px;
+        font-size: 80px;
+        font-weight: 600;
+}
+.work-title img{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    top: 85px;
+    z-index: -1;
+}
+.work-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    border: 10px;
+    border: 1px transparent lavender;
+    transform: 0.4s;
+    cursor: pointer;
+    /* box-shadow: -10px 10px 26px -8px rgba(220, 237, 121, 0.4); */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5), 0 0 10px 5px rgba(229, 244, 146, 0.4);
+
+}
+
+.work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 70px;
+    margin-bottom: 80px;
+    
+    
+}
+.work-format button{
+    padding: 20px;
+    border-radius: 50px;
+    width: 200px;
+    margin-left: 30%;
+    background-color: rgb(131, 66, 10);
+    font-size: 20px;
+    font-weight: 200;
+    border: 1px solid white;
+}
+
+.work-format h3{
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B92391 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.work-format p{
+color: #d4d4d4;
+font-size: 20px;
+line-height: 30px;
+max-width: 400px;
+}
+.work-format:hover{
+    transform: scale(1.05);
+    border: 2px solid #ff00ff;
+    transition: 0.4s;
+    background-image: linear-gradient(45deg,#3f0028,#582300);
+}
+.work-format img{
+    box-sizing: border-box;
+    width: 400px;
+    height: 280px;
+    transform: 0.3s;
+    cursor: pointer;
+    margin: 10px;
+}
+.work-format img:hover{
+    transform: scale(1.10);
+    transform: 0.3s;
+    border-radius: 10px;
+}
+@media(max-width:768px){
+    .work{
+        gap: 50px;
+        margin: 50px 50px;
+        align-items: start;
+    }
+    .work-title h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .work-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .work-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
+    }
+    .work-format{
+        gap: 20px;
+        padding: 32px;
+    }
+    .work-format img{
+        width: 200px;
+        height: 100%;
+        margin-right: 60px;
+    }
+    .work-format h3{
+        font-size: 28px;
+    }
+    .work-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+
+}
