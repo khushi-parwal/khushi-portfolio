@@ -38,6 +38,8 @@ Let us connect and build something incredible together!</p>
         <hr style={{width:'50%'}}/></div>
         <div className='about-skill'><p>C,C++</p>
         <hr style={{width:'60%'}}/></div>
+        <div className='about-skill'><p>Core JAVA</p>
+        <hr style={{width:'60%'}}/></div>
         <div className='about-skill'><p>Communication</p>
         <hr style={{width:'70%'}}/></div>
     </div>
